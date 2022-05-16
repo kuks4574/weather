@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода в вашем городе</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 class="textHeader">Here you can find out the weather in your city</h1>
+    </div>
+
+    <div class="bgi">
+        <div class="container">
+            <div class="blockInput">
+                <div class="header1">
+                    <h1>Current weather</h1>
+                </div>
+                <div class="input1">
+                    <input type="text" name="city" id="city" placeholder="Enter city" required />
+                    <div class="search"><input type="image" id="submit-btn" src='img/search.png' alt="Search"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weatherDay">
+
+                <div class="block1">
+                    <div class="column">
+                        <div>
+                            <p id="nameCity"></p>
+                        </div>
+
+
+                        <div class="cloudinessIcon">
+                            <img id="iconFirst" src="" alt="iconWeather">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block2">
+                    <div class="flex2">
+                        <div class="column">
+                            <div>
+                                <h1 id="temp"></h1>
+                            </div>
+
+                            <div>
+                                <p id="cloudiness"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block3">
+
+                    <div class="column">
+                        <div class="date">
+                            <p id="date"></p>
+                        </div>
+                        <div class="tempDay">
+                            <p id="minTemp"></p>
+                        </div>
+                        <div class="tempDay">
+                            <p id="maxTemp"></p>
+                        </div>
+                        <div class="tempDay">
+                            <p id="windSpeed"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h1>Hourly</h1>
+
+            <div class="hourlyWeather">
+
+                <div class="hourly-1">
+                    <div class="blockWeather blockWeather-1">
+                        <p>Time</p>
+                    </div>
+                    <div id="iconblock1" class="icon">
+
+                    </div>
+                    <div class="blockWeather blockWeather-1">
+                        <p>Forecast</p>
+                    </div>
+                    <div class="blockWeather blockWeather-1">
+                        <p>Temp.(<sup>o</sup>C)</p>
+                    </div>
+                    <div class="blockWeather blockWeather-1">
+                        <p>Wind (m/s)</p>
+                    </div>
+                </div>
+
+                <div class="hourly-2">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt2"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon2" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc2"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp2"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind2"></p>
+                    </div>
+                </div>
+
+                <div class="hourly-3">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt3"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon3" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc3"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp3"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind3"></p>
+                    </div>
+                </div>
+
+                <div class="hourly-4">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt4"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon4" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc4"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp4"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind4"></p>
+                    </div>
+                </div>
+
+                <div class="hourly-5">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt5"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon5" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc5"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp5"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind5"></p>
+                    </div>
+                </div>
+
+                <div class="hourly-6">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt6"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon6" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc6"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp6"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind6"></p>
+                    </div>
+                </div>
+
+                <div class="hourly-7">
+                    <div class="blockWeather blockWeather-1">
+                        <p id="dt7"></p>
+                    </div>
+                    <div class="icon">
+                        <img id="icon7" src="" alt="iconWeather">
+                    </div>
+                    <div class="blockWeather">
+                        <p id="fc7"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="temp7"></p>
+                    </div>
+                    <div class="blockWeather">
+                        <p id="wind7"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <h1>&#169; website developer &#171;KUKSOV ALEXEY&#187;</h1>
+        </div>
+
+        <div class="footer2">
+
+        </div>
+    </div>
+
+    <div id="error" class="error">
+        <div id="error1" class="banner">
+            <h1>404</h1>
+        </div>
+        <div id="error2" class="banner">
+            <h1>NOT FOUND</h1>
+        </div>
+        <div class="banner">
+            <h1>Please enter city name</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

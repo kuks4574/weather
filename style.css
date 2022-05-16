@@ -1,0 +1,494 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #9cd4fd;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+#header {
+    width: 100wh;
+    height: 150px;
+    background-image: url("img/header-1.jpg");
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textHeader {
+    color: aliceblue;
+    font-size: 36px;
+    margin-top: 60px;
+}
+
+.header1 {
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(221, 240, 42);
+    text-shadow: 2px 2px 2px #000;
+}
+
+.input1 {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-left: 600px;
+    margin-top: 0;
+
+}
+
+
+#city {
+    width: 150px;
+    height: 27px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px solid rgb(28, 38, 238);
+    background-color: #ebebeb;
+    margin-top: 0;
+
+}
+
+#city:focus {
+    outline: none;
+}
+
+.search {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+}
+
+.bgi {
+    width: 100wh;
+    height: 1000px;
+    background-image: url("img/130.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container {
+    width: 70%;
+    min-height: 1200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 800px;
+    position: absolute;
+    left: 18%;
+}
+
+
+.weatherDay,
+.hourlyWeather {
+    width: 90%;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.weatherDay {
+    height: 325px;
+}
+
+.hourlyWeather {
+    display: inline-block;
+}
+
+.weatherDay {
+    display: flex;
+}
+
+.block1,
+.block2,
+.block3 {
+    height: 280px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.block1 {
+    width: 20%;
+}
+
+.block1:hover {
+    font-size: 30px;
+    background-color: rgba(161, 206, 234, 0.5);
+}
+
+.block2 {
+    width: 30%;
+}
+
+.block2:hover {
+    font-size: 30px;
+    background-color: rgba(161, 206, 234, 0.5);
+}
+
+.block3 {
+    width: 40%;
+}
+
+#nameCity {
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(247, 161, 62);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+
+#nameCity:hover {
+    color: rgb(249, 48, 21);
+    text-shadow: 2px 2px 2px rgb(13, 13, 13);
+}
+
+#temp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#cloudiness {
+    color: rgb(232, 243, 232);
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+}
+
+.cloudinessIcon {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(161, 206, 234, 0.5);
+}
+
+.cloudinessIcon:hover {
+    background-color: rgb(124, 199, 245);
+}
+
+.flex2 {
+    align-self: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.date,
+.tempDay {
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(16, 17, 16);
+}
+
+.date {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 50px;
+    color: rgb(255, 154, 38);
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+}
+
+.date:hover {
+    color: rgb(245, 63, 39);
+}
+
+.tempDay:hover {
+    color: rgb(255, 251, 4);
+    text-decoration: underline;
+}
+
+.hourly-1,
+.hourly-2,
+.hourly-3,
+.hourly-4,
+.hourly-5,
+.hourly-6,
+.hourly-7 {
+    width: 140px;
+    height: 350px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.hourly-1:hover,
+.hourly-2:hover,
+.hourly-3:hover,
+.hourly-4:hover,
+.hourly-5:hover,
+.hourly-6:hover,
+.hourly-7:hover {
+    background-color: rgba(41, 161, 235, 0.5);
+}
+
+.blockWeather {
+    width: 132px;
+    height: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+}
+
+.blockWeather:hover {
+    color: rgb(246, 0, 0);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.blockWeather-1 {
+    color: rgb(13, 13, 13);
+    text-shadow: 2px 2px 2px rgb(245, 246, 165);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.icon {
+    width: 140px;
+    height: 135px;
+    background-color: rgba(143, 197, 231, 0.5);
+}
+
+.icon:hover {
+    background-color: rgba(40, 165, 243, 0.5);
+}
+
+#iconblock1 {
+    background-color: rgba(143, 197, 231, 0);
+    background-image: url("img/icon.png");
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100wh;
+    height: 200px;
+    background-image: url("img/footer.jpg");
+    ;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer1 {
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 32.7%;
+    color: rgb(57, 63, 237);
+    z-index: 2;
+}
+.footer1>h1 {
+    color: rgb(44, 44, 245); 
+}
+
+.footer2 {
+    width: 150px;
+    height: 150px;
+    background-image: url("img/footer2.jpg");
+    background-size: cover;
+    margin-left: 45%;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* ERROR */
+
+.error {
+    width: 78%;
+    height: 700px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 240px;
+    left: 10%;
+    text-align: center;
+    border: 15px solid rgb(99, 214, 235);
+    background-image: url("img/124.jpg");
+    opacity: 1;
+}
+
+.banner {
+    margin-top: 30px;
+    color: rgb(10, 10, 10);
+    width: 100wh;
+    background-color: rgb(65, 202, 239);
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgb(220, 48, 48);
+}
+
+#error1,
+#error2 {
+    display: none;
+}
+
+/* Медиа */
+
+@media screen and (max-width: 1550px) {
+    .footer {
+        margin-top: 160px;
+    }
+
+    .hourly-1,
+    .hourly-2,
+    .hourly-3,
+    .hourly-4,
+    .hourly-5,
+    .hourly-6,
+    .hourly-7 {
+        border: 1px solid rgb(144, 144, 144);
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .input1 {
+        margin-left: 400px;
+    }
+
+    .error {
+        height: 1050px;
+        margin-top: -10px;
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+    .input1 {
+        margin-left: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1045px) {
+    .block3 {
+        display: none;
+    }
+
+    .block1,
+    .block2 {
+        width: 40%;
+    }
+
+    #nameCity,
+    #temp {
+        font-size: 20px;
+    }
+
+    .textHeader {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    #header {
+        height: 100px;
+    }
+
+    .footer1 {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .input1 {
+        margin-left: 10px;
+    }
+
+    .error {
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .footer {
+        margin-top: 510px;
+    }
+
+    .footer1 {
+        margin-left: 10%;
+    }
+
+    .error {
+        height: 1400px;
+        margin-top: -60px;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .footer {
+        margin-top: 550px;
+    }
+
+    .error {
+        height: 1400px;
+        margin-top: -20px;
+    }
+
+    .hourly-1 {
+        display: none;
+    }
+
+    .footer {
+        height: 100px;
+        font-size: 16px;
+    }
+
+    .footer1 {
+        width: 300px;
+        height: 20px;
+        margin-top: 25px;
+        margin-left: 20%;
+    }
+
+    .footer2 {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .footer1>h1 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .footer {
+        margin-top: 1610px;
+    }
+
+    .error {
+        margin-left: -40px;
+        height: 2460px;
+        margin-top: -20px;
+    }
+
+    .hourly-1 {
+        display: none;
+    }
+
+    .container {
+        left: 0%
+    }
+
+    .block1,
+    .block2 {
+        width: 50%;
+    }
+}
